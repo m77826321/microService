@@ -13,6 +13,19 @@
               <title value="Claude 2.0" />
             </llm>
           </llm>
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="add project intellig to git" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Here are the steps to add a project to Git version control:&#10;&#10;1. Navigate to the project directory in your terminal/command prompt.&#10;&#10;2. Initialize a new Git repository by running:&#10;&#10;```bash&#10;git init&#10;```&#10;&#10;3. Add all the files in the project to the staging area by running: &#10;&#10;```bash &#10;git add .&#10;```&#10;&#10;4. Commit the files with an initial commit message:&#10;&#10;```bash&#10;git commit -m &quot;Initial commit&quot; &#10;```&#10;&#10;5. Add a remote origin URL pointing to a new repository on GitHub/GitLab/Bitbucket etc:&#10;&#10;```bash&#10;git remote add origin &lt;remote_url&gt;&#10;```&#10;&#10;6. Push the commits to the remote repository:&#10;&#10;```bash &#10;git push -u origin master&#10;```&#10;&#10;Now your project is version controlled with Git and hosted on the remote repository. You can make changes locally, commit them and push to update the remote.&#10;&#10;Let me know if you need any clarification or have additional questions!" />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-03-14T10:12:26.683322439" />
         </chat>
       </list>
     </chats>
