@@ -30,7 +30,7 @@ public class ProductService {
     }
 
     public Product create(ProductRequest productRequest) {
-        Coupon coupon = restTemplate.getForObject("http://localhost:8086/api/v1/coupons/code/{code}/", Coupon.class, productRequest.getCode());
+        Coupon coupon = restTemplate.getForObject("http://localhost:8086/api/v1/coupons/code/{code}", Coupon.class, productRequest.getCode());
         assert coupon != null;
         BigDecimal subtract = new BigDecimal("100").subtract(coupon.getDiscount());
         var product = Product.builder()
