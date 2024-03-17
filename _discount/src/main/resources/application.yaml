@@ -1,0 +1,34 @@
+logging:
+  level:
+    #    org.springframework.web: trace
+    #    org.springframework.jdbc.core: trace
+    org.springframework.data.jpa: trace
+    root: debug
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ebrahimi2782
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: "true"
+
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v1/api-docs
+  swagger-ui:
+    path: /swagger-ui
+
+server:
+  port: 8086
+
