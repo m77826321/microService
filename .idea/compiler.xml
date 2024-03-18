@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="_discount" />
         <module name="product" />
+        <module name="_eureka_service" />
       </profile>
     </annotationProcessing>
   </component>

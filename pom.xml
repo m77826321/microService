@@ -10,6 +10,7 @@
     <modules>
         <module>_product</module>
         <module>_discount</module>
+        <module>_eureka_service</module>
     </modules>
 
     <properties>

@@ -13,8 +13,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class Coupon {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
     @NonNull
     private String code;

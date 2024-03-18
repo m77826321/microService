@@ -20,6 +20,8 @@ spring:
     properties:
       hibernate:
         format_sql: "true"
+  application:
+    name: discount
 
 
 springdoc:
@@ -30,5 +32,9 @@ springdoc:
     path: /swagger-ui
 
 server:
-  port: 8086
+  port: 8085
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

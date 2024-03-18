@@ -195,7 +195,98 @@
           </messages>
           <updatedAt value="2024-03-17T16:01:45.99515958" />
         </chat>
+        <chat>
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <remoteUrl value="github.com/m77826321/microService" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="5aecbdfc-b0a6-4b7d-93c0-a0779e53c601" />
+        </chat>
+        <chat>
+          <accountId value="VXNlcjozMTIyMTQ=" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <remoteUrl value="github.com/m77826321/microService" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="d7e7143d-9068-49aa-bcd5-93f6d89980c6" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-2.0" />
+              <provider value="Anthropic" />
+              <title value="Claude 2.0" />
+            </llm>
+          </llm>
+        </chat>
+        <chat>
+          <accountId value="VXNlcjozMTIyMTQ=" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <remoteUrl value="github.com/m77826321/microService" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="d7421d0d-4649-48fa-a8d4-b491e5387a86" />
+          <messages>
+            <list>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="eureka:&#10;  client:&#10;    service-url:" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Got it, here is the selected YAML code from the file `c:\Users\pc\IdeaProjects\microService\_product\src\main\resources\application.yaml`:&#10;&#10;```yaml&#10;eureka:&#10;  client:&#10;    service-url:&#10;```" />
+              </message>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="eureka client default zoon" />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Unfortunately I don't have enough context to understand what code snippet you want me to locate based on &quot;eureka client default zoon&quot;. Could you please provide more details like the file path or name, repository if on GitHub, or share a broader code snippet that contains the part you want me to focus on? Some additional context about what you are trying to achieve would also help me better assist you." />
+              </message>
+              <message>
+                <speaker value="HUMAN" />
+                <text value="eureka client " />
+              </message>
+              <message>
+                <speaker value="ASSISTANT" />
+                <text value=" Unfortunately I don't have a specific code snippet to provide without more context. Here are a few suggestions for locating Eureka client configuration code:&#10;&#10;- If you are looking for a default Eureka client configuration, check Spring Cloud Netflix files on GitHub. For example, the DefaultEurekaClientConfig class contains defaults: https://github.com/spring-cloud/spring-cloud-netflix/blob/master/spring-cloud-netflix-eureka-client/src/main/java/org/springframework/cloud/netflix/eureka/DefaultEurekaClientConfig.java&#10;&#10;- Search the codebase or repository for files containing &quot;EurekaClient&quot; - this is typically in the application configuration files.&#10;&#10;- Look for @EnableEurekaClient annotations on configuration classes - this will enable Eureka client.&#10;&#10;- Search for dependencies like &quot;spring-cloud-starter-netflix-eureka-client&quot; in build files to locate where Eureka client is set up.&#10;&#10;- If this is in reference to a specific application, please provide more details like the repository, build files, or a broader code snippet showing Eureka usage. &#10;&#10;Let me know if any of those suggestions help or if you have additional details I can use to locate the specific Eureka client configuration you're looking for." />
+              </message>
+            </list>
+          </messages>
+          <updatedAt value="2024-03-18T18:20:35.3712666" />
+        </chat>
       </list>
     </chats>
+    <defaultEnhancedContext>
+      <enhancedContext>
+        <remoteRepositories>
+          <list>
+            <remoteRepository>
+              <remoteUrl value="github.com/m77826321/microService" />
+            </remoteRepository>
+          </list>
+        </remoteRepositories>
+      </enhancedContext>
+    </defaultEnhancedContext>
   </component>
 </project>
