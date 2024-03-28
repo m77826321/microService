@@ -2,6 +2,8 @@ package org.ebrahimi.product.service;
 
 import org.ebrahimi.discount.Coupon;
 import org.ebrahimi.discount.DiscountClient;
+import org.ebrahimi.notification.NotificationClient;
+import org.ebrahimi.notification.NotificationRequest;
 import org.ebrahimi.product.dto.ProductRequest;
 import org.ebrahimi.product.entity.Product;
 import org.ebrahimi.product.repository.ProductRepository;
@@ -22,8 +24,12 @@ public class ProductService {
 //    @Autowired
 //    private RestTemplate restTemplate;
 
+
     @Autowired
     private DiscountClient discountClient;
+
+    @Autowired
+    NotificationClient notificationClient;
 
     public List<Product> findAll() {
         return productRepository.findAll();
@@ -46,7 +52,12 @@ public class ProductService {
                 .name(productRequest.getName())
                 .build();
 
-        return productRepository.save(product);
+        var savedProduct = productRepository.save(product);
+
+        var notificationRequest = NotificationRequest.builder().toProductId(savedProduct.getId()).message("Product created").build();
+
+        this.notificationClient.sendNotification(notificationRequest);
+        return savedProduct;
     }
 
     public Product update(Long id, Product updatedProduct) {

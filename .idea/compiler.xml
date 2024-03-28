@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="product" />
         <module name="_clients" />
+        <module name="_notification" />
         <module name="_discount" />
         <module name="_eureka_service" />
       </profile>

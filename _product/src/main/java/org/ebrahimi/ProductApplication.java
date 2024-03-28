@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
  *
  */
 @SpringBootApplication
-@EnableFeignClients(basePackages = {"org.ebrahimi.discount"})
+@EnableFeignClients(basePackages = {"org.ebrahimi.discount","org.ebrahimi.notification"})
 public class ProductApplication
 {
     public static void main( String[] args )

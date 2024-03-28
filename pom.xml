@@ -12,6 +12,8 @@
         <module>_discount</module>
         <module>_eureka_service</module>
         <module>_clients</module>
+        <module>_notification</module>
+
     </modules>
 
     <properties>
