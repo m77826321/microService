@@ -275,6 +275,28 @@
           </messages>
           <updatedAt value="2024-03-18T18:20:35.3712666" />
         </chat>
+        <chat>
+          <accountId value="VXNlcjozMTIyMTQ=" />
+          <enhancedContext>
+            <enhancedContext>
+              <remoteRepositories>
+                <list>
+                  <remoteRepository>
+                    <remoteUrl value="github.com/m77826321/microService" />
+                  </remoteRepository>
+                </list>
+              </remoteRepositories>
+            </enhancedContext>
+          </enhancedContext>
+          <internalId value="b35b2fec-d8eb-48f9-8a4f-fe556daebe89" />
+          <llm>
+            <llm>
+              <model value="anthropic/claude-2.0" />
+              <provider value="Anthropic" />
+              <title value="Claude 2.0" />
+            </llm>
+          </llm>
+        </chat>
       </list>
     </chats>
     <defaultEnhancedContext>

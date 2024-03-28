@@ -1,7 +1,8 @@
 package org.ebrahimi.product.service;
 
+import org.ebrahimi.discount.Coupon;
+import org.ebrahimi.discount.DiscountClient;
 import org.ebrahimi.product.dto.ProductRequest;
-import org.ebrahimi.product.entity.Coupon;
 import org.ebrahimi.product.entity.Product;
 import org.ebrahimi.product.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,8 +19,11 @@ public class ProductService {
     @Autowired
     private ProductRepository productRepository;
 
+//    @Autowired
+//    private RestTemplate restTemplate;
+
     @Autowired
-    private RestTemplate restTemplate;
+    private DiscountClient discountClient;
 
     public List<Product> findAll() {
         return productRepository.findAll();
@@ -30,7 +34,10 @@ public class ProductService {
     }
 
     public Product create(ProductRequest productRequest) {
-        Coupon coupon = restTemplate.getForObject("http://DISCOUNT/api/v1/coupons/code/{code}", Coupon.class, productRequest.getCode());
+        // Rest Tamplate
+        // Coupon coupon = restTemplate.getForObject("http://DISCOUNT/api/v1/coupons/code/{code}", Coupon.class, productRequest.getCode());
+        // Feign Client
+        Coupon coupon = discountClient.findByCouponCode(productRequest.getCode());
         assert coupon != null;
         BigDecimal subtract = new BigDecimal("100").subtract(coupon.getDiscount());
         var product = Product.builder()

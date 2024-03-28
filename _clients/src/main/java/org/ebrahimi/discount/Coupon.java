@@ -1,7 +1,5 @@
-package org.ebrahimi.product.entity;
+package org.ebrahimi.discount;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;

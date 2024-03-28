@@ -11,6 +11,7 @@
         <module>_product</module>
         <module>_discount</module>
         <module>_eureka_service</module>
+        <module>_clients</module>
     </modules>
 
     <properties>
@@ -54,6 +55,11 @@
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.6.15</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
     </dependencies>
